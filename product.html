@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>套裝行程</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <i class="fas fa-cat fa-1x mr-1"></i>
+            咪呆旅遊網
+        </a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <div class="p-3" style="min-width: 320px" data-offset="400">
+                    <h6>已選擇行程</h6>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-secondary" data-toggle="modal" data-target="#removeModal" data-title="刪除 東京鐵塔 行程">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>東京鐵塔</td>
+                                <td>1 人</td>
+                                <td>$5200</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-secondary" data-toggle="modal" data-target="#removeModal" data-title="刪除 箱根水上鳥居 行程">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>箱根水上鳥居</td>
+                                <td>1 人</td>
+                                <td>$4800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Product Detail -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent pl-0">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="index.html">日本</a></li>
+            <li class="breadcrumb-item active" aria-current="page">廣島大鳥居</li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="sticky-top" style="top: 10px;">    
+                <h1 class="h2">廣島大鳥居</h1>
+                <div class="d-flex justify-content-end align-items-end">
+                    <del class="text-secondary">原價 NT$4900</del>
+                    <div class="h3 ml-auto mb-0 text-danger">
+                        <small>特價 NT$</small>
+                        <strong>2990</strong>
+                    </div>
+                </div>
+                <hr>
+                行程：
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> 輕鬆遊
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 漫漫遊
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 深度遊
+                    </label>
+                </div>
+                <div class="input-group mt-3">
+                    <select class="form-control mr-1">
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人</option>
+                        <option value="6">6人</option>
+                    </select>
+                    <a href="#" class="btn btn-primary">加入購物車</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h3>代表日本的鳥居，來旅遊怎能錯過！</h3>
+            <p class="mb-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="text-center" id="option1">
+                <h4>這是一個在海上的鳥居</h4>
+                <img class="w-100 mb-5" src="https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b66e9d835de3873a86d1cec996a1af06&auto=format&fit=crop&w=1190&q=80" alt="">
+                <h4>漲潮能欣賞海上鳥居之美</h4>
+                <img class="w-100 mb-5" src="https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b66e9d835de3873a86d1cec996a1af06&auto=format&fit=crop&w=1190&q=80" alt="">
+                <h4>退潮能走向鳥居來個大合影</h4>
+                <img class="w-100 mb-5" src="https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b66e9d835de3873a86d1cec996a1af06&auto=format&fit=crop&w=1190&q=80" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="bg-light py-4 mt-3">
+    <div class="container d-flex justify-content-center">
+        <div class="mr-3">© Copyright 2018 咪呆旅遊網</div>
+        <div>
+            <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header badge-danger text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                期待您下次的預訂！
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-outline-danger">刪除</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script>
+        $(document).ready(function () {
+            //編輯modal事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+
+                var modal = $(this);
+                modal.find('.modal-title').text(title);
+            })
+
+
+        })
+    </script>
+        
+</body>
+</html>

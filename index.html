@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>咪呆旅遊網</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <i class="fas fa-cat fa-1x mr-1"></i>
+            咪呆旅遊網
+        </a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <div class="p-3" style="min-width: 320px" data-offset="400">
+                    <h6>已選擇行程</h6>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-secondary" data-toggle="modal" data-target="#removeModal" data-title="刪除 東京鐵塔 行程">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>東京鐵塔</td>
+                                <td>1 人</td>
+                                <td>$5200</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-secondary" data-toggle="modal" data-target="#removeModal" data-title="刪除 箱根水上鳥居 行程">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>箱根水上鳥居</td>
+                                <td>1 人</td>
+                                <td>$4800</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-lighter p-3 text-center">
+                <h1 class="display-4">亞洲行程大促銷</h1>
+                <p class="lead">咪呆是一隻貓，熱愛旅遊，夢想是環遊世界。<br>
+                        快跟著咪呆，一同勇闖世界每個角落吧！
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                    <div class="list-group sticky-top">
+                    <a href="#japan" class="list-group-item list-group-item-action active" data-toggle="list"><i class="fas fa-torii-gate mr-2"></i>日本 Japan</a>
+                    <a href="#korea" class="list-group-item list-group-item-action" data-toggle="list"><i class="fas fa-globe-asia mr-2"></i>韓國 Korea</a>
+                    <a href="#taiwan" class="list-group-item list-group-item-action" data-toggle="list"><i class="fas fa-globe-asia mr-2"></i>台灣 Taiwan</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled"><i class="fas fa-globe-asia mr-2"></i>泰國 Thailand</a>
+                    </div>
+            </div>
+            <div class="col-md-9">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="想去哪裡玩？" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                        </div>
+                    </div>
+            
+                <div class="tab-content">
+                    <div class="tab-pane active" id="japan">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b66e9d835de3873a86d1cec996a1af06&auto=format&fit=crop&w=1190&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <a href="product.html">
+                                            <h5 class="card-title text-dark">廣島大鳥居</h5>
+                                        </a>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=04cb1349ddef3da346cb4565d58c4d80&auto=format&fit=crop&w=762&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">東京鐵塔</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1532884928231-ef40895eb654?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b899d27bcef4b765fb404987f94bcc33&auto=format&fit=crop&w=1466&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">嵐山竹林</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1522547902298-51566e4fb383?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cfd04c77babc527bc55147d64613f4b9&auto=format&fit=crop&w=675&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">五重塔</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-0.3.5&s=0b210e0478fe62f0da4dd1690d3ef176&auto=format&fit=crop&w=949&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">箱根水上鳥居</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="korea">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff47a951e987a1be1a4f6e836317a3b&auto=format&fit=crop&w=1050&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">韓國市區</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1506480932912-dbbe35e3e516?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9e7d522269f7b539c9011cfe5be4f689&auto=format&fit=crop&w=1500&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">韓服體驗</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="taiwan">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1515975325863-a4ceb4b7d6c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9589db82eb05383f9a0983dbd9f9906b&auto=format&fit=crop&w=925&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">台北101</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1508248467877-aec1b08de376?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f31916f747038b850e3efa3bb94f640&auto=format&fit=crop&w=967&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">中正紀念堂</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center border-0 box-shadow h-100">
+                                    <img class="card-img-top" src="https://images.unsplash.com/photo-1525803377221-4f6ccdaa5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=070861ed4185684ef64a56f53af7a1af&auto=format&fit=crop&w=1053&q=80"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">世界好喝珍珠奶茶</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0">
+                                        <div class="button-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">輕鬆遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">漫漫遊</a>
+                                            <a href="#" class="btn btn-outline-secondary">深度遊</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="bg-light py-4 mt-3">
+    <div class="container d-flex justify-content-center">
+       <div class="mr-3">© Copyright 2018 咪呆旅遊網</div>
+       <div>
+            <a href="#" class="text-secondary"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-secondary"><i class="fab fa-twitter"></i></a>
+       </div>
+    </div>
+</footer>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header badge-danger text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                期待您下次的預訂！
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-outline-danger">刪除</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script>
+        $(document).ready(function () {
+            //編輯modal事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+                
+                var modal = $(this);
+                modal.find('.modal-title').text(title);
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>
